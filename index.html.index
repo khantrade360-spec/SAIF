@@ -470,6 +470,696 @@ document.body.appendChild(h);
 }
 
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Letter To Nida ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#120012,#2b002b,#000);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:0;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:.2;}
+to{opacity:1;}
+}
+
+.card{
+
+width:90%;
+max-width:700px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 0 35px rgba(255,0,120,.5);
+
+z-index:2;
+
+}
+
+h1{
+
+font-family:"Great Vibes",cursive;
+
+font-size:58px;
+
+color:#ff6fb5;
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+#text{
+
+font-size:20px;
+
+line-height:1.9;
+
+white-space:pre-wrap;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="card">
+
+<h1>My Letter To Nida ❤️</h1>
+
+<p id="text"></p>
+
+</div>
+
+<script>
+
+const message=`Happy Girlfriend's Day, my beautiful Nida ❤️
+
+The day you came into my life, everything changed in the most beautiful way. You filled my world with happiness, love, peace, and countless reasons to smile. Every memory we have created together is precious to me, and every moment with you feels like a dream I never want to wake up from.
+
+You are my peace, my happiness, my safe place, and the most beautiful chapter of my life. If I had to choose again, I would still choose you every single time.
+
+Thank you for loving me, believing in me, and making my life brighter than I ever imagined.
+
+I promise to love you, respect you, support you, and stand beside you through every season of life.
+
+Forever Yours,
+❤️`;
+
+let i=0;
+
+function type(){
+
+if(i<message.length){
+
+document.getElementById("text").innerHTML+=message.charAt(i);
+
+i++;
+
+setTimeout(type,35);
+
+}
+
+}
+
+type();
+
+for(let s=0;s<120;s++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDelay=Math.random()*2+"s";
+
+document.getElementById("stars").appendChild(star);
+
+}
+
+</script>
+
+</body>
+</html>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Forever & Always ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:linear-gradient(135deg,#140014,#250025,#000);
+
+overflow:hidden;
+
+font-family:Poppins,sans-serif;
+
+color:white;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:900px;
+
+margin:auto;
+
+padding-top:40px;
+
+text-align:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+h1{
+
+font-family:Great Vibes,cursive;
+
+font-size:65px;
+
+color:#ff70b5;
+
+margin-bottom:30px;
+
+text-shadow:0 0 20px hotpink;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+
+padding:20px;
+
+margin:20px 0;
+
+box-shadow:0 0 20px rgba(255,0,120,.4);
+
+animation:fadeUp 1s ease;
+
+}
+
+.card h2{
+
+color:#ff80c0;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.heart{
+
+position:fixed;
+
+font-size:24px;
+
+color:#ff3f9a;
+
+animation:float 10s linear infinite;
+
+opacity:.5;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-100px);
+
+opacity:0;
+
+}
+
+}
+
+#music{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+padding:12px 18px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff2f92;
+
+color:white;
+
+cursor:pointer;
+
+box-shadow:0 0 15px hotpink;
+
+}
+
+.bigHeart{
+
+font-size:90px;
+
+animation:beat 1s infinite;
+
+margin-top:30px;
+
+}
+
+@keyframes beat{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+
+}
+
+.footer{
+
+font-size:28px;
+
+margin-top:15px;
+
+font-family:Great Vibes,cursive;
+
+color:#ffd4ea;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button id="music" onclick="toggleMusic()">🎵 Music</button>
+
+<audio id="bgMusic" loop>
+<source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>Our Forever ❤️</h1>
+
+<div class="card">
+<h2>🌹 My Dream</h2>
+<p>
+I dream of growing old with you, laughing together, traveling together, celebrating every little victory together, and holding your hand through every challenge life brings.
+</p>
+</div>
+
+<div class="card">
+<h2>💍 My Promise</h2>
+<p>
+I promise to respect you, support you, protect your smile, and remind you every day how deeply you are loved.
+</p>
+</div>
+
+<div class="card">
+<h2>❤️ My Forever Wish</h2>
+<p>
+No matter what happens in life, my heart will always choose you. Every sunrise, every sunset, every heartbeat... I want them all with you, Nida.
+</p>
+</div>
+
+<div class="bigHeart">❤️</div>
+
+<div class="footer">
+Forever & Always<br>
+Yours Only ❤️
+</div>
+
+</div>
+
+<script>
+
+const music=document.getElementById("bgMusic");
+
+function toggleMusic(){
+
+if(music.paused){
+
+music.play();
+
+document.getElementById("music").innerHTML="⏸ Pause";
+
+}else{
+
+music.pause();
+
+document.getElementById("music").innerHTML="🎵 Music";
+
+}
+
+}
+
+for(let i=0;i<80;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(12+Math.random()*30)+"px";
+
+heart.style.animationDuration=(5+Math.random()*8)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forever & Always ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#140014,#2b002b,#000);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+text-align:center;
+}
+
+.container{
+z-index:5;
+padding:20px;
+}
+
+h1{
+font-family:"Great Vibes",cursive;
+font-size:72px;
+color:#ff6db5;
+margin-bottom:20px;
+text-shadow:0 0 20px hotpink;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+#timer{
+font-size:28px;
+font-weight:bold;
+color:#ffd700;
+margin:25px 0;
+}
+
+button{
+padding:18px 45px;
+border:none;
+border-radius:50px;
+font-size:22px;
+cursor:pointer;
+background:#ff2f92;
+color:white;
+box-shadow:0 0 25px hotpink;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:float 8s linear infinite;
+color:#ff4da6;
+opacity:.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{opacity:1;}
+100%{
+transform:translateY(-120px);
+opacity:0;
+}
+}
+
+.firework{
+position:absolute;
+width:6px;
+height:6px;
+border-radius:50%;
+background:white;
+animation:explode 1.2s linear forwards;
+}
+
+@keyframes explode{
+0%{
+transform:scale(.5);
+opacity:1;
+}
+100%{
+transform:translate(var(--x),var(--y)) scale(3);
+opacity:0;
+}
+}
+
+#message{
+display:none;
+margin-top:35px;
+font-size:34px;
+font-family:"Great Vibes",cursive;
+color:#ffd4e8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Forever & Always ❤️</h1>
+
+<p>
+No matter where life takes us,<br>
+my heart will always choose you.<br><br>
+
+Thank you for making my world brighter,<br>
+my smile bigger,<br>
+and my life more beautiful.<br><br>
+
+I love you endlessly, Nida.
+</p>
+
+<div id="timer"></div>
+
+<button onclick="celebrate()">Yes, Forever ❤️</button>
+
+<div id="message">
+❤️ Forever Yours, Nida ❤️
+</div>
+
+</div>
+
+<script>
+
+// Floating Hearts
+for(let i=0;i<80;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(12+Math.random()*30)+"px";
+
+h.style.animationDuration=(5+Math.random()*8)+"s";
+
+h.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(h);
+
+}
+
+// Timer (change this date)
+const start=new Date("2026-01-01");
+
+function update(){
+
+const now=new Date();
+
+const diff=now-start;
+
+const days=Math.floor(diff/86400000);
+
+document.getElementById("timer").innerHTML=
+"❤️ Together for "+days+" beautiful days ❤️";
+
+}
+
+update();
+
+setInterval(update,1000);
+
+// Fireworks
+function firework(){
+
+for(let i=0;i<25;i++){
+
+let f=document.createElement("div");
+
+f.className="firework";
+
+f.style.left=Math.random()*100+"vw";
+
+f.style.top=Math.random()*100+"vh";
+
+f.style.setProperty("--x",(Math.random()*250-125)+"px");
+
+f.style.setProperty("--y",(Math.random()*250-125)+"px");
+
+document.body.appendChild(f);
+
+setTimeout(()=>f.remove(),1200);
+
+}
+
+}
+
+function celebrate(){
+
+document.getElementById("message").style.display="block";
+
+firework();
+
+setInterval(firework,1800);
+
+}
+
+</script>
 
 </body>
 </html>
